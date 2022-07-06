@@ -3,7 +3,7 @@ Version:        1.3.1
 Release:        1%{?dist}
 Summary:        A Token Bucket implementation.
 
-License:        Apache License 2.0
+License:        MIT
 URL:            https://github.com/supakeen/pinnwand
 Source0:        %{pypi_source pinnwand}
 
@@ -26,7 +26,7 @@ BuildRequires:  python3-devel
 
 %install
 %pyproject_install
-%pyproject_save_files token_bucket
+%pyproject_save_files pinnwand
 
 %check
 %pytest
